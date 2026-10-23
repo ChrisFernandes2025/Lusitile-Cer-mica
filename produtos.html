@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+    <h1>Lusitile</h1>
+    <nav>   
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="contatos.html">Contactos</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="produtos-intro">
+    <h1>Os nossos produtos</h1>
+    <p>
+        Descobre soluções cerâmicas pensadas para diferentes tipos de espaços,
+        combinando estética, resistência e funcionalidade.
+    </p>
+    </section>
+
+    <section class="produtos-lista">
+
+        <div class="produto-card">
+    <div class="produto-inner">
+
+        <div class="produto-frente">
+            <img src="imagens/exterior.png" alt="Cerâmica para exterior">
+        </div>
+
+        <div class="produto-verso">
+            <h3>Exterior</h3>
+            <p>
+                Soluções resistentes para espaços exteriores.
+            </p>
+
+            <button class="ver-galeria" id="abrirExterior">Ver opções</button>
+        </div>
+
+    </div>
+</div>
+
+        <div class="produto-card">
+            <div class="produto-inner">
+                <div class="produto-frente">
+            <img src="imagens/pavimento.jpeg" alt="Pavimento Cerâmico">
+            </div>
+             
+            <div class="produto-verso">
+            <h3>Pavimento</h3>
+            <p>
+                Soluções resistentes e versáteis para espaços resisdenciais e comerciais.
+            </p>
+
+            <button class="ver-galeria" id="abrirPavimento">Ver opções</button>
+            </div>
+            </div>
+            </div>
+
+        <div class="produto-card">
+            <div class="produto-inner">
+                <div class="produto-frente">
+            <img src="imagens/revestimento.webp" alt="Revestimento Cerâmico">
+            </div>
+            <div class="produto-verso">
+            <h3>Revestimento</h3>
+            <p>
+                Acabamentos pensados para criar ambientes com personalidadee identidade.
+            </p>
+
+            <button class="ver-galeria" id="abrirRevestimento">Ver opções</button>
+            </div>
+            </div>
+        </div>
+
+        <div class="produto-card">
+    <div class="produto-inner">
+
+        <div class="produto-frente">
+            <img src="imagens/pequenos-formatos.jpg" alt="Cerâmica em pequenos formatos">
+        </div>
+
+        <div class="produto-verso">
+            <h3>Pequenos Formatos</h3>
+            <p>
+                Peças versáteis e cheias de personalidade para criar
+                composições únicas em diferentes ambientes.
+            </p>
+
+            <button class="ver-galeria" id="abrirPequenosFormatos">Ver opções</button>
+        </div>
+
+    </div>
+</div>
+
+        <div class="produto-card">
+            <div class="produto-inner">
+                <div class="produto-frente">
+            <img src="imagens/grandes formatos.jpg" alt="Grandes formatos">
+            </div>
+            <div class="produto-verso">
+            <h3>Grandes Formatos</h3>
+            <p>
+                Peças de grande dimensão para projetos modernos, sofisticados e diferenciadores.
+            </p>
+
+            <button class="ver-galeria" id="abrirGrandesFormatos">Ver opções</button>
+        </div>
+        </div>
+        </div>
+    </section>
+
+    <div class="galeria-modal" id="galeriaExterior">
+
+        <div class="galeria-conteudo">
+
+            <button class="fechar-galeria" id="fecharExterior">×</button>
+
+            <h2>Exterior</h2>
+
+            <div class="galeria-imagens">
+
+    <div class="galeria-item">
+        <img src="imagens/exterior.png" alt="Pavimento exterior">
+
+        <h3>Pavimento Tek Deck</h3>
+
+        <p>
+            Ideal para zonas de piscina e espaços exteriores.
+        </p>
+    </div>
+
+
+    <div class="galeria-item">
+        <img src="imagens/exterior1.jpg" alt="Pavimento exterior">
+
+        <h3>Pavimento Roots</h3>
+
+        <p>
+            Ideal para zonas de terraços e espaços exteriores.
+        </p>
+    </div>
+
+   </div>
+ </div>
+</div>
+
+
+<div class="galeria-modal" id="galeriaPequenosFormatos">
+
+    <div class="galeria-conteudo">
+
+        <button class="fechar-galeria" id="fecharPequenosFormatos">×</button>
+
+        <h2>Pequenos Formatos</h2>
+
+        <div class="galeria-imagens">
+
+            <div class="galeria-item">
+                <img src="imagens/peq_formato.jpg" alt="Pequenos formatos cerâmicos">
+
+                <h3>Geometric Mix</h3>
+
+                <p>Formatos decorativos para criar padrões modernos e personalizados.</p>
+            </div>
+
+            <div class="galeria-item">
+                <img src="imagens/peq-formato1.jpg" alt="Pequenos formatos cerâmicos">
+
+                <h3>Classic Mosaic</h3>
+
+                <p>Soluções compactas e versáteis para cozinhas, casas de banho e detalhes decorativos.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="galeria-modal" id="galeriaPavimento">
+
+    <div class="galeria-conteudo">
+
+        <button class="fechar-galeria" id="fecharPavimento">×</button>
+
+        <h2>Pavimento</h2>
+
+        <div class="galeria-imagens">
+
+            <div class="galeria-item">
+                <img src="imagens/pavimento2.jpg" alt="Pavimento cerâmico">
+
+                <h3>Stone Effect</h3>
+
+                <p>Pavimento de inspiração natural, resistente e versátil para diferentes ambientes.</p>
+            </div>
+
+            <div class="galeria-item">
+                <img src="imagens/pavimento3.jpg" alt="Pavimento cerâmico">
+
+                <h3>Marble Look</h3>
+
+                <p>Acabamento elegante para espaços modernos e sofisticados.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="galeria-modal" id="galeriaRevestimento">
+
+    <div class="galeria-conteudo">
+
+        <button class="fechar-galeria" id="fecharRevestimento">×</button>
+
+        <h2>Revestimento</h2>
+
+        <div class="galeria-imagens">
+
+            <div class="galeria-item">
+                <img src="imagens/revestimento1.jpg" alt="Revestimento cerâmico">
+
+                <h3>Natural Stone</h3>
+
+                <p>Texturas naturais para criar ambientes elegantes e acolhedores.</p>
+            </div>
+
+            <div class="galeria-item">
+                <img src="imagens/revestimento2.jpg" alt="Revestimento cerâmico">
+
+                <h3>Textured Wall</h3>
+
+                <p>Revestimento decorativo pensado para dar personalidade às paredes.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="galeria-modal" id="galeriaGrandesFormatos">
+
+    <div class="galeria-conteudo">
+
+        <button class="fechar-galeria" id="fecharGrandesFormatos">
+            ×
+        </button>
+
+        <h2>Grandes Formatos</h2>
+
+        <div class="galeria-imagens">
+
+            <div class="galeria-item">
+                <img src="imagens/grande-formato.jpg" alt="Cerâmica de grande formato">
+
+                <h3>Large Marble</h3>
+
+                <p>Superfícies amplas com acabamento elegante para espaços contemporâneos.</p>
+            </div>
+
+            <div class="galeria-item">
+                <img src="imagens/grande-formato1.jpg" alt="Cerâmica de grande formato">
+
+                <h3>Urban Stone</h3>
+
+                <p>Grandes dimensões para criar ambientes modernos com poucas juntas.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+    </main>
+
+    <div class="cookies" id="cookies">
+    <p>
+        Utilizamos cookies para melhorar a sua experiência no nosso site.
+    </p>
+
+    <div class="cookies-botoes">
+        <button id="aceitarCookies">Aceitar</button>
+        <button id="recusarCookies">Recusar</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

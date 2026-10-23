@@ -1,0 +1,658 @@
+body{
+   margin: 0;
+   font-family: Arial, Helvetica, sans-serif; 
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+}
+
+.hero{
+    background-image: url("imagens/hero.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 420px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 50px;
+}
+
+.hero p{
+    font-size: 18px;
+    max-width: 700px;
+    margin-bottom: 25px;
+}
+
+.hero a{
+    display: inline-block;
+    text-decoration: none;
+    background-color: #222;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 5px;
+}
+
+.qualidade{
+    padding: 50px;
+    text-align: center;
+}
+
+.qualidade h2{
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.qualidade p{
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.categorias{
+    display: flex;
+    gap: 20px;
+    padding: 50px;
+    align-items: stretch;
+}
+
+.categoria{
+    padding: 25px;
+    border: 1px solid #ddd;
+    flex: 1;
+    border-radius: 8px;
+    background-color: white;
+}
+
+.categoria h3{
+    margin-bottom: 10px;
+}
+
+footer{
+    padding: 40px 50px 20px;
+    background-color: #222;
+    color: white;
+}
+
+.footer-conteudo{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.footer-coluna{
+    flex: 1;
+    min-width: 180px;
+}
+
+.footer-coluna h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.footer-coluna h4{
+    margin-bottom: 12px;
+}
+
+.footer-coluna a{
+    display: block;
+    color: #d8c3a5;
+    text-decoration: none;
+    margin-bottom: 8px;
+}
+
+.footer-coluna a:hover{
+    color: white;
+}
+
+.footer-bottom{
+    border-top: 1px solid #555;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 13px;
+    padding-top: 15px;
+}
+
+.hero a:hover{
+    background-color: #555
+}
+
+nav a:hover{
+    color: #777;
+}
+
+.categoria img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+.hero h2{
+    background-color: rgba(255, 255, 255, 0.55);
+    padding: 10px 14px;
+    margin-bottom: 15px;
+    font-size: 40px;
+}
+.hero p{
+    background-color: rgba(255, 255, 255, 0.45);
+    padding: 10px 14px;
+    max-width: 500px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.sobre img{
+    width: 45%;
+    max-width: 500px;
+    border-radius: 10px;
+    margin: 0;
+}
+
+.sobre{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 50px;
+}
+
+.sobre p{
+    flex: 1;
+    line-height: 1.6;
+}
+
+.sobre-texto{
+    flex: 1;
+}
+
+.valores{
+    display: flex;
+    gap: 20px;
+    padding: 40px 50px 60px;
+}
+
+.valor{
+    flex: 1;
+    padding: 30px;
+    background-color: #f4f1ec;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.valor h3{
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+.valor p{
+    line-height: 1.6;
+}
+
+.produtos-intro{
+    text-align: center;
+    padding: 50px;
+}
+
+.produtos-lista{
+    display: flex;
+    gap: 25px;
+    padding: 40px 50px 60px;
+}
+
+.produto{
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.produto img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.produtos-lista{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 40px 50px 60px;
+    justify-items: center;
+    gap: 25px;
+   
+}
+
+.produto-card{
+    width: 100%;
+    max-width: 300px;
+    perspective: 1000px;
+    height: 300px;
+}
+
+.produto-inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.7s;
+    transform-style: preserve-3d;
+}
+
+.produto-card:hover .produto-inner{
+    transform: rotateY(180deg);
+}
+
+.produto-frente,
+.produto-verso{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.produto-frente img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.produto-verso{
+    background-color: #f4f1ec;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    text-align: center;
+}
+
+.produto-card{
+    cursor: pointer;
+}
+
+.contactos-intro{
+    text-align: center;
+    padding: 10px 40px 15px;
+}
+
+.contactos-conteudo{
+    display: flex;
+    gap: 30px;
+    padding: 10px 40px 20px;
+    align-items: center;
+}
+
+.contactos-info{
+    flex: 0 0 300px;
+    padding: 25px;
+    background-color: #f4f1ec;
+    border-radius: 12px;
+    min-height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+}
+
+.contactos-form{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contactos-form input
+.contactos-form textarea{
+    padding: 12px;
+    border: 2px solid #999;
+    border-radius: 6px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: white;
+ }   
+
+.contactos-form textarea{
+    min-height: 120px;
+    resize: vertical;
+}
+
+.contactos-form button{
+    padding: 12px 20px;
+    background-color: #222;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.contactos-info h3{
+    font-size: 28px;
+    margin-bottom: 25px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.contactos-info p{
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+header h1{
+    font-size: 46px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+header{
+    padding: 12px 40px;
+}
+
+header h1{
+    margin: 0;
+}
+
+
+header nav ul{
+    margin: 0;
+    padding: 0;
+}
+.contactos-intro{
+    padding: 5px 40px 10px;
+}
+
+.contactos-intro h1{
+    margin: 0 0 8px;
+}
+
+.contactos-intro p{
+    margin: 0;
+}
+
+.contactos-conteudo{
+    padding: 10px 40px 15px;
+}
+
+.cookies{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #222;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    z-index: 1000;
+}
+
+.cookies p{
+    margin: 0;
+}
+
+.cookies-botoes{
+    display: flex;
+    gap: 10px;
+}
+
+.cookies button{
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#aceitarCookies{
+    background-color: #f4f1ec;
+    color: #222;
+}
+
+#recusarCookies{
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+@media (max-width: 700px){
+    header{
+        flex-direction: column;
+        gap: 15px;
+    }
+    nav ul{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+    .hero{
+        padding: 30px 20px;
+        min-height: 350px;
+    }
+    .hero h2{
+        font-size: 30px;
+    }
+    .categorias,
+    .valores,
+    .contactos-conteudo,
+    .sobre{
+        flex-direction: column;
+    }
+    .sobre img{
+        width: 100%;
+        max-width: 100%;
+    }
+    .contactos-info{
+        flex: none;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .cookies{
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .galeria-conteudo{
+        width: 90%;
+        max-height: 85vh;
+        padding: 20px;
+    }
+
+    .galeria-imagens{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .galeria-item{
+        width: 100%;
+        max-width: 280px;
+    }
+
+    .galeria-imagens img{
+        width: 100%;
+        height: auto;
+    }
+
+    .galeria-conteudo h2{
+        font-size: 26px;
+    }
+
+    .produtos-lista{
+        grid-template-columns: 1fr;
+        padding: 25px 20px;
+    }
+
+    .produto-card{
+        width: 100%;
+        max-width: 300px;
+        height: 300px;
+    }
+}
+
+.produto-frente img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 550px){
+    .produtos-lista{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .produto-card{
+        width: 90%;
+        height: 280px;
+        max-width: 360px;
+        flex: none;
+    }
+
+    .produto-inner{
+        width: 100%;
+        height: 100%;
+    }
+
+    .produto-frente,
+    .produto-verso{
+        width: 100%;
+        height: 100%;
+    }
+
+    .produto-frente img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .produto-verso{
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .produto-verso h3{
+        font-size: 20px;
+    }
+
+    .produto-verso p{
+        font-size: 15px;
+    }
+}
+
+.pagina-legal{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 50px;
+    line-height: 1.7;
+}
+
+.pagina-legal h1{
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.pagina-legal h2{
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.ver-galeria{
+    margin-top: 15px;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 6px;
+    background-color: #222;
+    color: white;
+    cursor: pointer;
+}
+
+.ver-galeria:hover{
+    background-color: #555;
+}
+
+.galeria-modal{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    z-index: 1000;
+}
+
+.galeria-conteudo{
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    max-width: 800px;
+    width: 90%;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+    text-align: center;
+}
+
+.galeria-imagens{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.galeria-imagens img{
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.fechar-galeria{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    border: none;
+    background: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.galeria-item{
+    text-align: center;
+    width: 220px;
+    color: #222;
+}
+
+.galeria-item p{
+    margin: 0;
+    line-height: 1.4;
+    color: #444;
+}
+
+.galeria-item h3{
+    margin: 10px 0 5px;
+    color: #222;
+}

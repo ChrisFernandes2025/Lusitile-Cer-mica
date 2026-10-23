@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+    <h1>Lusitile</h1>
+    <nav>   
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="contatos.html">Contactos</a></li>
+        </ul>
+    </nav>
+</header>
+    <main>
+        <section class="contactos-intro">
+            <h1>Contacta-nos</h1>
+            <p>Tens alguma questão ou procuras uma solução para o teu projeto?
+                Entra em contacto connosco.
+            </p>
+        </section>
+
+        <section class="contactos-conteudo">
+            <div class="contactos-info">
+                <h3>Lusitile</h3>
+                <p>Email: geral@lusitile.pt</p>
+                <p>Telefone: +351 234 000 000</p>
+                <p>Aveiro, Portugal</p>
+            </div>
+
+            <form class="contactos-form">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome">
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+
+                <label for="mensagem">Mensagem</label>
+                <textarea name="mensagem" id="mensagem"></textarea>
+
+                <button type="submit">Enviar mensagem</button>
+            </form>
+        </section>
+    </main>
+
+    <div class="cookies" id="cookies">
+    <p>
+        Utilizamos cookies para melhorar a sua experiência no nosso site.
+    </p>
+
+    <div class="cookies-botoes">
+        <button id="aceitarCookies">Aceitar</button>
+        <button id="recusarCookies">Recusar</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
