@@ -1,303 +1,412 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html lang="pt">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Produtos</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Produtos | Lusitile</title>
+
+  <link rel="stylesheet" href="style.css">
 </head>
+
 
 <body>
 
-    <header>
-    <h1>Lusitile</h1>
-    <nav>   
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="sobre.html">Sobre</a></li>
-            <li><a href="produtos.html">Produtos</a></li>
-            <li><a href="contatos.html">Contactos</a></li>
-        </ul>
+
+  <!-- HEADER -->
+  <header>
+
+    <a href="index.html" class="logo-texto">
+      <span class="logo-l">L</span>usitile
+    </a>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="produtos.html">Produtos</a></li>
+        <li><a href="contatos.html">Contactos</a></li>
+      </ul>
     </nav>
-</header>
 
-<main>
+  </header>
+
+
+
+  <main>
+
+
+    <!-- INTRODUÇÃO -->
     <section class="produtos-intro">
-    <h1>Os nossos produtos</h1>
-    <p>
-        Descobre soluções cerâmicas pensadas para diferentes tipos de espaços,
+
+      <h1>Os nossos produtos</h1>
+
+      <p>
+        Descobre soluções cerâmicas pensadas para diferentes espaços,
         combinando estética, resistência e funcionalidade.
-    </p>
+      </p>
+
     </section>
 
-    <section class="produtos-lista">
-
-        <div class="produto-card">
-    <div class="produto-inner">
-
-        <div class="produto-frente">
-            <img src="imagens/exterior.png" alt="Cerâmica para exterior">
-        </div>
-
-        <div class="produto-verso">
-            <h3>Exterior</h3>
-            <p>
-                Soluções resistentes para espaços exteriores.
-            </p>
-
-            <button class="ver-galeria" id="abrirExterior">Ver opções</button>
-        </div>
-
-    </div>
-</div>
-
-        <div class="produto-card">
-            <div class="produto-inner">
-                <div class="produto-frente">
-            <img src="imagens/pavimento.jpeg" alt="Pavimento Cerâmico">
-            </div>
-             
-            <div class="produto-verso">
-            <h3>Pavimento</h3>
-            <p>
-                Soluções resistentes e versáteis para espaços resisdenciais e comerciais.
-            </p>
-
-            <button class="ver-galeria" id="abrirPavimento">Ver opções</button>
-            </div>
-            </div>
-            </div>
-
-        <div class="produto-card">
-            <div class="produto-inner">
-                <div class="produto-frente">
-            <img src="imagens/revestimento.webp" alt="Revestimento Cerâmico">
-            </div>
-            <div class="produto-verso">
-            <h3>Revestimento</h3>
-            <p>
-                Acabamentos pensados para criar ambientes com personalidadee identidade.
-            </p>
-
-            <button class="ver-galeria" id="abrirRevestimento">Ver opções</button>
-            </div>
-            </div>
-        </div>
-
-        <div class="produto-card">
-    <div class="produto-inner">
-
-        <div class="produto-frente">
-            <img src="imagens/pequenos-formatos.jpg" alt="Cerâmica em pequenos formatos">
-        </div>
-
-        <div class="produto-verso">
-            <h3>Pequenos Formatos</h3>
-            <p>
-                Peças versáteis e cheias de personalidade para criar
-                composições únicas em diferentes ambientes.
-            </p>
-
-            <button class="ver-galeria" id="abrirPequenosFormatos">Ver opções</button>
-        </div>
-
-    </div>
-</div>
-
-        <div class="produto-card">
-            <div class="produto-inner">
-                <div class="produto-frente">
-            <img src="imagens/grandes formatos.jpg" alt="Grandes formatos">
-            </div>
-            <div class="produto-verso">
-            <h3>Grandes Formatos</h3>
-            <p>
-                Peças de grande dimensão para projetos modernos, sofisticados e diferenciadores.
-            </p>
-
-            <button class="ver-galeria" id="abrirGrandesFormatos">Ver opções</button>
-        </div>
-        </div>
-        </div>
-    </section>
-
-    <div class="galeria-modal" id="galeriaExterior">
-
-        <div class="galeria-conteudo">
-
-            <button class="fechar-galeria" id="fecharExterior">×</button>
-
-            <h2>Exterior</h2>
-
-            <div class="galeria-imagens">
-
-    <div class="galeria-item">
-        <img src="imagens/exterior.png" alt="Pavimento exterior">
-
-        <h3>Pavimento Tek Deck</h3>
-
-        <p>
-            Ideal para zonas de piscina e espaços exteriores.
-        </p>
-    </div>
 
 
-    <div class="galeria-item">
-        <img src="imagens/exterior1.jpg" alt="Pavimento exterior">
+    <!-- PAVIMENTO -->
+    <section class="produto-destaque" id="pavimento">
 
-        <h3>Pavimento Roots</h3>
+      <div class="produto-imagem">
 
-        <p>
-            Ideal para zonas de terraços e espaços exteriores.
-        </p>
-    </div>
+        <img
+          src="imagens/pavimento-capa.jpg"
+          alt="Pavimento cerâmico">
 
-   </div>
- </div>
-</div>
+      </div>
 
 
-<div class="galeria-modal" id="galeriaPequenosFormatos">
+      <div class="produto-texto">
 
-    <div class="galeria-conteudo">
-
-        <button class="fechar-galeria" id="fecharPequenosFormatos">×</button>
-
-        <h2>Pequenos Formatos</h2>
-
-        <div class="galeria-imagens">
-
-            <div class="galeria-item">
-                <img src="imagens/peq_formato.jpg" alt="Pequenos formatos cerâmicos">
-
-                <h3>Geometric Mix</h3>
-
-                <p>Formatos decorativos para criar padrões modernos e personalizados.</p>
-            </div>
-
-            <div class="galeria-item">
-                <img src="imagens/peq-formato1.jpg" alt="Pequenos formatos cerâmicos">
-
-                <h3>Classic Mosaic</h3>
-
-                <p>Soluções compactas e versáteis para cozinhas, casas de banho e detalhes decorativos.</p>
-            </div>
-
-        </div>
-
-    </div>
-
-</div>
-
-<div class="galeria-modal" id="galeriaPavimento">
-
-    <div class="galeria-conteudo">
-
-        <button class="fechar-galeria" id="fecharPavimento">×</button>
+        <span>01</span>
 
         <h2>Pavimento</h2>
 
-        <div class="galeria-imagens">
+        <p>
+          Soluções resistentes e versáteis para criar ambientes modernos,
+          confortáveis e cheios de personalidade.
+        </p>
 
-            <div class="galeria-item">
-                <img src="imagens/pavimento2.jpg" alt="Pavimento cerâmico">
+        <button
+          class="ver-colecao"
+          id="abrirPavimento">
 
-                <h3>Stone Effect</h3>
+          Ver coleção
 
-                <p>Pavimento de inspiração natural, resistente e versátil para diferentes ambientes.</p>
-            </div>
+        </button>
 
-            <div class="galeria-item">
-                <img src="imagens/pavimento3.jpg" alt="Pavimento cerâmico">
+      </div>
 
-                <h3>Marble Look</h3>
+    </section>
 
-                <p>Acabamento elegante para espaços modernos e sofisticados.</p>
-            </div>
 
-        </div>
 
-    </div>
+    <!-- REVESTIMENTO -->
+    <section
+      class="produto-destaque invertido"
+      id="revestimento">
 
-</div>
+      <div class="produto-imagem">
 
-<div class="galeria-modal" id="galeriaRevestimento">
+        <img
+          src="imagens/revestimento-capa.jpg"
+          alt="Revestimento cerâmico">
 
-    <div class="galeria-conteudo">
+      </div>
 
-        <button class="fechar-galeria" id="fecharRevestimento">×</button>
+
+      <div class="produto-texto">
+
+        <span>02</span>
 
         <h2>Revestimento</h2>
 
-        <div class="galeria-imagens">
+        <p>
+          Texturas, cores e acabamentos capazes de transformar paredes
+          e dar identidade a cada espaço.
+        </p>
 
-            <div class="galeria-item">
-                <img src="imagens/revestimento1.jpg" alt="Revestimento cerâmico">
+        <button
+          class="ver-colecao"
+          id="abrirRevestimento">
 
-                <h3>Natural Stone</h3>
+          Ver coleção
 
-                <p>Texturas naturais para criar ambientes elegantes e acolhedores.</p>
-            </div>
-
-            <div class="galeria-item">
-                <img src="imagens/revestimento2.jpg" alt="Revestimento cerâmico">
-
-                <h3>Textured Wall</h3>
-
-                <p>Revestimento decorativo pensado para dar personalidade às paredes.</p>
-            </div>
-
-        </div>
-
-    </div>
-
-</div>
-
-<div class="galeria-modal" id="galeriaGrandesFormatos">
-
-    <div class="galeria-conteudo">
-
-        <button class="fechar-galeria" id="fecharGrandesFormatos">
-            ×
         </button>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- GRANDES FORMATOS -->
+    <section
+      class="produto-destaque"
+      id="grandes-formatos">
+
+      <div class="produto-imagem">
+
+        <img
+          src="imagens/grandesFormatos-capa.jpg"
+          alt="Cerâmica de grandes formatos">
+
+      </div>
+
+
+      <div class="produto-texto">
+
+        <span>03</span>
 
         <h2>Grandes Formatos</h2>
 
-        <div class="galeria-imagens">
+        <p>
+          Peças de grande dimensão que criam continuidade visual
+          e um acabamento contemporâneo e sofisticado.
+        </p>
 
-            <div class="galeria-item">
-                <img src="imagens/grande-formato.jpg" alt="Cerâmica de grande formato">
+        <button
+          class="ver-colecao"
+          id="abrirGrandesFormatos">
 
-                <h3>Large Marble</h3>
+          Ver coleção
 
-                <p>Superfícies amplas com acabamento elegante para espaços contemporâneos.</p>
-            </div>
+        </button>
 
-            <div class="galeria-item">
-                <img src="imagens/grande-formato1.jpg" alt="Cerâmica de grande formato">
+      </div>
 
-                <h3>Urban Stone</h3>
+    </section>
 
-                <p>Grandes dimensões para criar ambientes modernos com poucas juntas.</p>
-            </div>
 
+
+
+
+<!-- GALERIA PAVIMENTO -->
+<div class="galeria-modal" id="galeriaPavimento">
+
+  <div class="galeria-conteudo">
+
+    <button class="fechar-galeria" id="fecharPavimento">×</button>
+
+    <h2>Pavimento</h2>
+
+    <div class="galeria-grid">
+
+      <div class="catalogo-item">
+        <img src="imagens/pavimento.jpeg" alt="Pavimento Urban Stone">
+
+        <div class="catalogo-info">
+          <h3>Natural Sand</h3>
+          <p>Pavimento · Beje</p>
         </div>
+      </div>
+
+
+      <div class="catalogo-item">
+        <img src="imagens/pavimento3.jpg" alt="Pavimento Natural Sand">
+
+        <div class="catalogo-info">
+          <h3>Urban Stone</h3>
+          <p>Pavimento · Cinza</p>
+        </div>
+      </div>
+
+
+      <div class="catalogo-item">
+        <img src="imagens/exterior.png" alt="Pavimento Graphite">
+
+        <div class="catalogo-info">
+          <h3>Graphite</h3>
+          <p>Pavimento · Antracite</p>
+        </div>
+      </div>
+
+
+      <div class="catalogo-item">
+        <img src="imagens/hero2.jpg" alt="Pavimento Travertino">
+
+        <div class="catalogo-info">
+          <h3>Travertino</h3>
+          <p>Pavimento · Natural</p>
+        </div>
+      </div>
 
     </div>
 
-</div>
-    </main>
+  </div>
 
-    <div class="cookies" id="cookies">
+</div>
+
+
+    <!-- GALERIA REVESTIMENTO -->
+<div class="galeria-modal" id="galeriaRevestimento">
+
+  <div class="galeria-conteudo">
+
+    <button class="fechar-galeria" id="fecharRevestimento">×</button>
+
+    <h2>Revestimento</h2>
+
+    <div class="galeria-grid">
+
+      <div class="catalogo-item">
+        <img src="imagens/peq-formato1.jpg" alt="Revestimento Calacatta">
+
+        <div class="catalogo-info">
+          <h3>Vetra</h3>
+          <p>Revestimento · Indigo</p>
+        </div>
+      </div>
+
+      <div class="catalogo-item">
+        <img src="imagens/peq_formato.jpg" alt="Revestimento Terra">
+
+        <div class="catalogo-info">
+          <h3>Terra</h3>
+          <p>Revestimento · Verde</p>
+        </div>
+      </div>
+
+      <div class="catalogo-item">
+        <img src="imagens/revestimento-capa.jpg" alt="Revestimento Ivory">
+
+        <div class="catalogo-info">
+          <h3>Ivory</h3>
+          <p>Revestimento · Bege</p>
+        </div>
+      </div>
+
+      <div class="catalogo-item">
+        <img src="imagens/revestimento2.jpg" alt="Revestimento Stone">
+
+        <div class="catalogo-info">
+          <h3>Belverdi</h3>
+          <p>Revestimento · Branco Brilho</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+   <!-- GALERIA GRANDES FORMATOS -->
+<div class="galeria-modal" id="galeriaGrandesFormatos">
+
+  <div class="galeria-conteudo">
+
+    <button class="fechar-galeria" id="fecharGrandesFormatos">×</button>
+
+    <h2>Grandes Formatos</h2>
+
+    <div class="galeria-grid">
+
+      <div class="catalogo-item">
+        <img src="imagens/grande-formato.jpg" alt="Grande formato Stone Grey">
+
+        <div class="catalogo-info">
+          <h3>Ivory</h3>
+          <p>Grande formato · Beje</p>
+        </div>
+      </div>
+
+      <div class="catalogo-item">
+        <img src="imagens/grande-formato1.jpg" alt="Grande formato Ivory">
+
+        <div class="catalogo-info">
+          <h3>Stone Grey</h3>
+          <p>Grande formato · Cinza</p>
+        </div>
+      </div>
+
+      <div class="catalogo-item">
+        <img src="imagens/exterior1.jpg" alt="Grande formato Calacatta">
+
+        <div class="catalogo-info">
+          <h3>Calacatta</h3>
+          <p>Grande formato · Branco</p>
+        </div>
+      </div>
+
+      <div class="catalogo-item">
+        <img src="imagens/grandesFormatos-capa.jpg" alt="Grande formato Graphite">
+
+        <div class="catalogo-info">
+          <h3>Graphite</h3>
+          <p>Grande formato · Antracite</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+  </main>
+
+
+
+ <footer class="footer">
+
+    <div class="footer-conteudo">
+
+        <div class="footer-coluna">
+
+        <h3><span class="logo-l">L</span>usitile</h3>
+        <p>Soluções cerâmicas para espaços modernos e duradouros.</p>
+        </div>
+
+        <div class="footer-coluna">
+           <h4>Navegação</h4>
+           <a href="index.html">Home</a>
+           <a href="sobre.html">Sobre</a>
+           <a href="produtos.html">Produtos</a>
+           <a href="contatos.html">Contactos</a>
+        </div>
+
+        <div class="footer-coluna">
+            <h4>Informação</h4>
+            <a href="privacidade.html">Política de Privacidade</a>
+            <a href="cookies.html">Política de Cookies</a>
+        </div>
+
+        <div class="footer-coluna">
+            <h4>Contactos</h4>
+            <p>geral@lusitile.pt</p>
+            <p>+351 234 000 000</p>
+            <p>Aveiro, Portugal</p>
+        </div>
+    </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Lusitile. Todos os direitos reservados.</p>
+        </div>
+</footer>
+
+
+
+  <!-- COOKIES -->
+  <div
+    class="cookies"
+    id="cookies">
+
     <p>
-        Utilizamos cookies para melhorar a sua experiência no nosso site.
+      Utilizamos cookies para melhorar a sua experiência no nosso site.
     </p>
 
     <div class="cookies-botoes">
-        <button id="aceitarCookies">Aceitar</button>
-        <button id="recusarCookies">Recusar</button>
+
+      <button id="aceitarCookies">
+        Aceitar
+      </button>
+
+      <button id="recusarCookies">
+        Recusar
+      </button>
+
     </div>
 
-    <script src="script.js"></script>
+  </div>
+
+
+
+  <!-- JAVASCRIPT -->
+  <script src="script.js"></script>
+
+
 </body>
+
 </html>

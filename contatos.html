@@ -10,7 +10,9 @@
 <body>
 
     <header>
-    <h1>Lusitile</h1>
+   <a href="index.html" class="logo-texto">
+  <span class="logo-l">L</span>usitile
+  </a>
     <nav>   
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -20,36 +22,189 @@
         </ul>
     </nav>
 </header>
-    <main>
-        <section class="contactos-intro">
-            <h1>Contacta-nos</h1>
-            <p>Tens alguma questão ou procuras uma solução para o teu projeto?
-                Entra em contacto connosco.
-            </p>
-        </section>
+ <section class="pedido-info">
 
-        <section class="contactos-conteudo">
-            <div class="contactos-info">
-                <h3>Lusitile</h3>
-                <p>Email: geral@lusitile.pt</p>
-                <p>Telefone: +351 234 000 000</p>
-                <p>Aveiro, Portugal</p>
-            </div>
+  <div class="pedido-titulo">
+    <span>FALE CONNOSCO</span>
+    <h1>Pedido de informação</h1>
+    <p>
+      Conta-nos um pouco sobre o teu projeto.
+      A nossa equipa entra em contacto contigo.
+    </p>
+  </div>
 
-            <form class="contactos-form">
-                <label for="nome">Nome</label>
-                <input type="text" id="nome" name="nome">
+  <form class="pedido-form">
 
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email">
+    <div class="form-linha">
 
-                <label for="mensagem">Mensagem</label>
-                <textarea name="mensagem" id="mensagem"></textarea>
+      <div class="campo">
+        <label for="nome">Nome *</label>
+        <input
+          type="text"
+          id="nome"
+          name="nome"
+          placeholder="Indique-nos o seu nome"
+          required
+        >
+      </div>
 
-                <button type="submit">Enviar mensagem</button>
-            </form>
-        </section>
-    </main>
+      <div class="campo">
+        <label for="email">Email *</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Escreva o seu endereço eletrónico"
+          required
+        >
+      </div>
+
+    </div>
+
+
+    <div class="form-linha tres-colunas">
+
+      <div class="campo">
+        <label for="pais">País *</label>
+        <select id="pais" name="pais" required>
+          <option value="">Selecionar</option>
+          <option value="Portugal">Portugal</option>
+          <option value="Espanha">Espanha</option>
+          <option value="França">França</option>
+          <option value="Outro">Outro</option>
+        </select>
+      </div>
+
+
+      <div class="campo">
+        <label for="atividade">Atividade *</label>
+        <select id="atividade" name="atividade" required>
+          <option value="">Selecionar</option>
+          <option>Particular</option>
+          <option>Arquitetura</option>
+          <option>Design de Interiores</option>
+          <option>Construção</option>
+          <option>Revenda</option>
+        </select>
+      </div>
+
+
+      <div class="campo">
+        <label for="assunto">Assunto *</label>
+        <select id="assunto" name="assunto" required>
+          <option value="">Selecionar</option>
+          <option>Informação sobre produtos</option>
+          <option>Pedido de orçamento</option>
+          <option>Projeto</option>
+          <option>Parceria</option>
+          <option>Outro</option>
+        </select>
+      </div>
+
+    </div>
+
+
+    <div class="campo">
+      <label for="mensagem">Mensagem *</label>
+
+      <textarea
+        id="mensagem"
+        name="mensagem"
+        placeholder="Escreva a sua mensagem"
+        required
+      ></textarea>
+    </div>
+
+
+    <div class="privacidade-form">
+      <input
+        type="checkbox"
+        id="privacidade"
+        name="privacidade"
+        required
+      >
+
+      <label for="privacidade">
+        Li e aceito a
+        <a href="privacidade.html">Política de Privacidade</a>.
+      </label>
+    </div>
+
+
+    <button type="submit" class="pedido-enviar">
+      Enviar pedido
+    </button>
+
+  </form>
+
+</section>
+
+<section class="showroom">
+
+  <div class="showroom-imagem">
+    <img src="imagens/showroom.jpg" alt="Showroom Lusitile">
+  </div>
+
+  <div class="showroom-info">
+    <span>ONDE ESTAMOS</span>
+
+    <h2>Visita o nosso showroom</h2>
+
+    <p>
+      Descobre de perto as nossas coleções, texturas e acabamentos.
+    </p>
+
+   <p class="showroom-morada">
+  📍 Aveiro, Portugal
+   </p>
+
+    <a
+      href="https://maps.app.goo.gl/o1UGjVLQPWfzMvc9A"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Abrir no Google Maps →
+    </a>
+  </div>
+
+</section>
+
+    <footer class="footer">
+
+    <div class="footer-conteudo">
+
+        <div class="footer-coluna">
+
+        <h3><span class="logo-l">L</span>usitile</h3>
+        <p>Soluções cerâmicas para espaços modernos e duradouros.</p>
+        </div>
+
+        <div class="footer-coluna">
+           <h4>Navegação</h4>
+           <a href="index.html">Home</a>
+           <a href="sobre.html">Sobre</a>
+           <a href="produtos.html">Produtos</a>
+           <a href="contatos.html">Contactos</a>
+        </div>
+
+        <div class="footer-coluna">
+            <h4>Informação</h4>
+            <a href="privacidade.html">Política de Privacidade</a>
+            <a href="cookies.html">Política de Cookies</a>
+        </div>
+
+        <div class="footer-coluna">
+            <h4>Contactos</h4>
+            <p>geral@lusitile.pt</p>
+            <p>+351 234 000 000</p>
+            <p>Aveiro, Portugal</p>
+        </div>
+    </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Lusitile. Todos os direitos reservados.</p>
+        </div>
+</footer>
 
     <div class="cookies" id="cookies">
     <p>

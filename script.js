@@ -1,86 +1,113 @@
-document.addEventListener("DOMContentLoaded", () =>{
+document.addEventListener("DOMContentLoaded", () => {
 
-
+// COOKIES
 const cookies = document.getElementById("cookies");
 const aceitarCookies = document.getElementById("aceitarCookies");
 const recusarCookies = document.getElementById("recusarCookies");
 
-aceitarCookies.addEventListener("click", () =>{
+const escolhaCookies = localStorage.getItem("cookiesLusitile");
+
+if (cookies) {
+  if (escolhaCookies === "aceites" || escolhaCookies === "recusados") {
     cookies.style.display = "none";
-});
+  } else {
+    cookies.style.display = "flex";
+  }
+}
 
-recusarCookies.addEventListener("click", () =>{
+if (aceitarCookies) {
+  aceitarCookies.addEventListener("click", () => {
+    localStorage.setItem("cookiesLusitile", "aceites");
     cookies.style.display = "none";
-});
-})
+  });
+}
+
+if (recusarCookies) {
+  recusarCookies.addEventListener("click", () => {
+    localStorage.setItem("cookiesLusitile", "recusados");
+    cookies.style.display = "none";
+  });
+}
 
 
-const abrirExterior =
-document.getElementById("abrirExterior");
-const fecharExterior =
-document.getElementById("fecharExterior");
-const galeriaExterior =
-document.getElementById("galeriaExterior");
+  // GALERIA EXTERIOR
+  const abrirExterior = document.getElementById("abrirExterior");
+  const fecharExterior = document.getElementById("fecharExterior");
+  const galeriaExterior = document.getElementById("galeriaExterior");
 
-abrirExterior.addEventListener("click", function(){
+  if (abrirExterior && fecharExterior && galeriaExterior) {
+    abrirExterior.addEventListener("click", () => {
+      galeriaExterior.style.display = "flex";
+    });
 
-    galeriaExterior.style.display="flex";
-});
+    fecharExterior.addEventListener("click", () => {
+      galeriaExterior.style.display = "none";
+    });
+  }
 
-fecharExterior.addEventListener("click", function(){
 
-    galeriaExterior.style.display="none"
-})
 
-const abrirPequenosFormatos =
-document.getElementById("abrirPequenosFormatos");
-const fecharPequenosFormatos =
-document.getElementById("fecharPequenosFormatos");
-const galeriaPequenosFormatos =
-document.getElementById("galeriaPequenosFormatos");
 
-abrirPequenosFormatos.addEventListener("click", function(){
+  // GALERIA PAVIMENTO
+  const abrirPavimento = document.getElementById("abrirPavimento");
+  const fecharPavimento = document.getElementById("fecharPavimento");
+  const galeriaPavimento = document.getElementById("galeriaPavimento");
 
-    galeriaPequenosFormatos.style.display="flex";
-});
+  if (abrirPavimento && fecharPavimento && galeriaPavimento) {
+    abrirPavimento.addEventListener("click", () => {
+      galeriaPavimento.style.display = "flex";
+    });
 
-fecharPequenosFormatos.addEventListener("click", function(){
+    fecharPavimento.addEventListener("click", () => {
+      galeriaPavimento.style.display = "none";
+    });
+  }
 
-    galeriaPequenosFormatos.style.display="none"
-})
 
-const abrirPavimento = document.getElementById("abrirPavimento");
-const fecharPavimento = document.getElementById("fecharPavimento");
-const galeriaPavimento = document.getElementById("galeriaPavimento");
+  // GALERIA REVESTIMENTO
+  const abrirRevestimento = document.getElementById("abrirRevestimento");
+  const fecharRevestimento = document.getElementById("fecharRevestimento");
+  const galeriaRevestimento = document.getElementById("galeriaRevestimento");
 
-abrirPavimento.addEventListener("click", function () {
-    galeriaPavimento.style.display = "flex";
-});
+  if (abrirRevestimento && fecharRevestimento && galeriaRevestimento) {
+    abrirRevestimento.addEventListener("click", () => {
+      galeriaRevestimento.style.display = "flex";
+    });
 
-fecharPavimento.addEventListener("click", function () {
-    galeriaPavimento.style.display = "none";
-});
+    fecharRevestimento.addEventListener("click", () => {
+      galeriaRevestimento.style.display = "none";
+    });
+  }
 
-const abrirRevestimento = document.getElementById("abrirRevestimento");
-const fecharRevestimento = document.getElementById("fecharRevestimento");
-const galeriaRevestimento = document.getElementById("galeriaRevestimento");
 
-abrirRevestimento.addEventListener("click", function () {
-    galeriaRevestimento.style.display = "flex";
-});
+  // GALERIA GRANDES FORMATOS
+  const abrirGrandesFormatos = document.getElementById("abrirGrandesFormatos");
+  const fecharGrandesFormatos = document.getElementById("fecharGrandesFormatos");
+  const galeriaGrandesFormatos = document.getElementById("galeriaGrandesFormatos");
 
-fecharRevestimento.addEventListener("click", function () {
-    galeriaRevestimento.style.display = "none";
-});
+  if (abrirGrandesFormatos && fecharGrandesFormatos && galeriaGrandesFormatos) {
+    abrirGrandesFormatos.addEventListener("click", () => {
+      galeriaGrandesFormatos.style.display = "flex";
+    });
 
-const abrirGrandesFormatos = document.getElementById("abrirGrandesFormatos");
-const fecharGrandesFormatos = document.getElementById("fecharGrandesFormatos");
-const galeriaGrandesFormatos = document.getElementById("galeriaGrandesFormatos");
+    fecharGrandesFormatos.addEventListener("click", () => {
+      galeriaGrandesFormatos.style.display = "none";
+    });
+  }
 
-abrirGrandesFormatos.addEventListener("click", function () {
-    galeriaGrandesFormatos.style.display = "flex";
-});
 
-fecharGrandesFormatos.addEventListener("click", function () {
-    galeriaGrandesFormatos.style.display = "none";
+  // CARROSSEL DO HERO
+  const slides = document.querySelectorAll(".hero-slide");
+  let slideAtual = 0;
+
+  if (slides.length > 0) {
+    setInterval(() => {
+      slides[slideAtual].classList.remove("ativo");
+
+      slideAtual = (slideAtual + 1) % slides.length;
+
+      slides[slideAtual].classList.add("ativo");
+    }, 5000);
+  }
+
 });

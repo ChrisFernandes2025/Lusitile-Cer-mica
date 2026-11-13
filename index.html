@@ -9,7 +9,10 @@
 <body>
 
 <header>
-    <h1>Lusitile</h1>
+   <a href="index.html" class="logo-texto">
+  <span class="logo-l">L</span>usitile
+</a>
+</a>
     <nav>   
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -21,39 +24,125 @@
 </header>
 <main>
     <section class="hero">
-        <h2>Cerâmica que transforma espaços!</h2>
-        <p>
-            Soluções em pavimento e revestimento que combinam 
-            design, qualidade e resistência para criar espaços únicos.
-        </p>
-        <a href="produtos.html">Ver produtos</a>
-    </section>
+    <div class="hero-slide ativo">
+        <img src="imagens/hero2.jpg" alt="Casa de banho moderna com revestimento cerâmico">
+    </div>
+
+    <div class="hero-slide">
+        <img src="imagens/hero.jpg" alt="Espaço tradicional com pavimento terracota">
+    </div>
+
+    <div class="hero-slide">
+        <img src="imagens/hero1.jpg" alt="Espaço exterior com pavimento cerâmico">
+    </div>
+
+    <div class="hero-conteudo">
+        <h2>Cerâmica que transforma espaços</h2>
+        <p>Design, matéria e personalidade para ambientes únicos.</p>
+        <a href="produtos.html">Descobrir coleções</a>
+    </div>
+</section>
+
+
+
+<script>
+  const slides = document.querySelectorAll(".hero-slide");
+  let slideAtual = 0;
+
+  setInterval(() => {
+    slides[slideAtual].classList.remove("ativo");
+    slideAtual = (slideAtual + 1) % slides.length;
+    slides[slideAtual].classList.add("ativo");
+  }, 3000);
+</script>
+
+
+
+
+
+
 
     <section class="qualidade">
-        <h2>Qualidade em cada detalhe</h2>
-        <p>
-            Na Lusitile desenvolvemos soluções cerâmicas que combinam design, 
-            resistência e funcionalidades para diferentes tipos de espaço!
-        </p>
-    </section>
+  <div class="qualidade-conteudo">
+
+    <h2>Qualidade em cada detalhe</h2>
+
+    <p class="qualidade-intro">
+      Na Lusitile desenvolvemos soluções cerâmicas que combinam design,
+      resistência e funcionalidade para transformar qualquer espaço.
+    </p>
+
+    <div class="qualidade-itens">
+
+      <div class="qualidade-item">
+        <div class="qualidade-icone">✦</div>
+        <h3>Design</h3>
+        <p>Linhas atuais e acabamentos pensados para espaços com personalidade.</p>
+      </div>
+
+      <div class="qualidade-item">
+        <div class="qualidade-icone">◇</div>
+        <h3>Qualidade</h3>
+        <p>Materiais selecionados para garantir consistência, conforto e confiança.</p>
+      </div>
+
+      <div class="qualidade-item">
+        <div class="qualidade-icone">○</div>
+        <h3>Durabilidade</h3>
+        <p>Soluções resistentes para acompanhar cada espaço ao longo do tempo.</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<section class="processo">
+  <video autoplay muted loop playsinline>
+    <source src="imagens/videos/processo.mp4" type="video/mp4">
+  </video>
+
+  <div class="processo-overlay">
+    <p>Da matéria à forma</p>
+    <h2>O processo por detrás da cerâmica</h2>
+    <a href="sobre.html">Conhecer a Lusitile</a>
+  </div>
+</section>
 
     <section class="categorias">
-        <div class="categoria">
-            <img src="imagens/pavimento.jpeg" alt="Pavimento Cerâmico">
-            <h3>Pavimento</h3>
-            <p>Soluções resistentes e versáteis para diferentes espaços.</p>
-        </div>
-        <div class="categoria">
-            <img src="imagens/revestimento.webp" alt="Revestimento Cerâmico">
-            <h3>Revestimento</h3>
-            <p>Acabamentos pensados para das personalidade a cada ambiente.</p>
-        </div>
-        <div class="categoria">
-            <img src="imagens/grandes formatos.jpg" alt="Grandes Formatos">
-            <h3>Grandes Formatos</h3>
-            <p>Peças de grande dimensão para projetos modernos e sofisticados.</p>
-        </div>
-    </section>
+
+  <a href="produtos.html#pavimento" class="categoria-card">
+    <img src="imagens/pavimento-capa.jpg" alt="Pavimento cerâmico">
+
+    <div class="categoria-overlay">
+      <h3>Pavimento</h3>
+      <p>Soluções resistentes e versáteis para diferentes espaços.</p>
+      <span>Explorar →</span>
+    </div>
+  </a>
+
+  <a href="produtos.html#revestimento" class="categoria-card">
+    <img src="imagens/revestimento-capa.jpg" alt="Revestimento cerâmico">
+
+    <div class="categoria-overlay">
+      <h3>Revestimento</h3>
+      <p>Acabamentos que dão personalidade a cada ambiente.</p>
+      <span>Explorar →</span>
+    </div>
+  </a>
+
+  <a href="produtos.html#grandes-formatos" class="categoria-card">
+    <img src="imagens/grandesFormatos-capa.jpg" alt="Cerâmica de grandes formatos">
+
+    <div class="categoria-overlay">
+      <h3>Grandes Formatos</h3>
+      <p>Peças de grande dimensão para projetos contemporâneos.</p>
+      <span>Explorar →</span>
+    </div>
+  </a>
+
+</section>
 </main>
 
 <footer class="footer">
@@ -62,7 +151,7 @@
 
         <div class="footer-coluna">
 
-        <h3>Lusitile</h3>
+        <h3><span class="logo-l">L</span>usitile</h3>
         <p>Soluções cerâmicas para espaços modernos e duradouros.</p>
         </div>
 
@@ -76,7 +165,7 @@
 
         <div class="footer-coluna">
             <h4>Informação</h4>
-            <a href="privacidade.html">Política de Pivacidade</a>
+            <a href="privacidade.html">Política de Privacidade</a>
             <a href="cookies.html">Política de Cookies</a>
         </div>
 
@@ -93,7 +182,6 @@
         </div>
 </footer>
 
-<script src="script.js"></script>
 
 <div class="cookies" id="cookies">
     <p>
@@ -106,5 +194,6 @@
     </div>
 </div>
 
+<script src="script.js"></script>
 </body>
 </html>
