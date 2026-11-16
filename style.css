@@ -6,15 +6,18 @@ body{
    font-family: Arial, Helvetica, sans-serif; 
 }
 
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 40px;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    background: white;
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 12px 40px;
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  background: white;
 }
 
 nav ul{
@@ -23,12 +26,9 @@ nav ul{
     gap: 25px;
 }
 
-nav a{
-    text-decoration: none;
-    color: black;
-}
-
 nav a {
+  text-decoration: none;
+  color: black;
   transition: transform 0.3s ease, color 0.3s ease;
 }
 
@@ -181,14 +181,6 @@ nav a:hover {
   padding: 0 25px;
 }
 
-.categoria-card {
-  position: relative;
-  height: 380px;
-  overflow: hidden;
-  border-radius: 8px;
-  text-decoration: none;
-  color: white;
-}
 
 .categoria-card img {
   width: 100%;
@@ -241,10 +233,6 @@ nav a:hover {
 
 .categoria-card:hover {
   transform: translateY(-5px);
-}
-
-.categoria-card {
-  transition: transform 0.3s ease;
 }
 
 @media (max-width: 700px) {
@@ -346,13 +334,6 @@ nav a:hover {
   }
 
 }
-.hero a:hover{
-    background-color: #555
-}
-
-nav a:hover{
-    color: #777;
-}
 
 .categoria img{
     width: 100%;
@@ -360,20 +341,6 @@ nav a:hover{
     object-fit: cover;
     border-radius: 6px;
     margin-bottom: 15px;
-}
-
-.hero h2{
-    background-color: rgba(255, 255, 255, 0.55);
-    padding: 10px 14px;
-    margin-bottom: 15px;
-    font-size: 40px;
-}
-.hero p{
-    background-color: rgba(255, 255, 255, 0.45);
-    padding: 10px 14px;
-    max-width: 500px;
-    line-height: 1.5;
-    margin-bottom: 20px;
 }
 
 .sobre-intro {
@@ -450,17 +417,6 @@ nav a:hover{
     line-height: 1.6;
 }
 
-.produtos-intro{
-    text-align: center;
-    padding: 50px;
-}
-
-.produtos-lista{
-    display: flex;
-    gap: 25px;
-    padding: 40px 50px 60px;
-}
-
 .produto{
     flex: 1;
     padding: 20px;
@@ -485,11 +441,13 @@ nav a:hover{
    
 }
 
-.produto-card{
-    width: 100%;
-    max-width: 300px;
-    perspective: 1000px;
-    height: 300px;
+.produto-card {
+  width: 100%;
+  max-width: 300px;
+  height: 300px;
+
+  perspective: 1000px;
+  cursor: pointer;
 }
 
 .produto-inner{
@@ -531,8 +489,66 @@ nav a:hover{
     text-align: center;
 }
 
-.produto-card{
-    cursor: pointer;
+
+
+.produto-destaque {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 40px 30px;
+
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 45px;
+  align-items: center;
+
+  min-height: auto;
+}
+
+.produto-imagem {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+.produto-imagem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.produto-texto {
+  padding: 0;
+  transform: none;
+}
+
+.produto-texto span {
+  font-size: 11px;
+  letter-spacing: 2px;
+  color: #b66a4a;
+}
+
+.produto-texto h2 {
+  font-size: 32px;
+  margin: 10px 0 15px;
+}
+
+.produto-texto p {
+  color: #666;
+  line-height: 1.7;
+  max-width: 430px;
+}
+
+@media (max-width: 750px) {
+  .produto-destaque {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    padding: 40px 20px;
+  }
+
+  .produto-imagem {
+    height: 280px;
+  }
 }
 
 .contactos {
@@ -571,32 +587,6 @@ nav a:hover{
   gap: 50px;
 }
 
-.campo {
-  margin-bottom: 14px;
-}
-
-.campo label {
-  display: block;
-  margin-bottom: 5px;
-  font-size: 13px;
-}
-
-.campo input {
-  width: 100%;
-  padding: 9px 12px;
-  border: 1px solid #ddd;
-  background: #fafafa;
-}
-
-.campo textarea {
-  width: 100%;
-  padding: 10px 12px;
-  min-height: 110px;
-  border: 1px solid #ddd;
-  background: #fafafa;
-  resize: vertical;
-}
-
 .contacto-form button {
   background: #b66a4a;
   color: white;
@@ -629,23 +619,12 @@ nav a:hover{
 
 }
 
-header h1{
-    font-size: 46px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: 600;
-    letter-spacing: 3px;
-}
-
-header{
-    padding: 12px 40px;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    background: white;
-}
-
-header h1{
-    margin: 0;
+header h1 {
+  margin: 0;
+  font-size: 46px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 600;
+  letter-spacing: 3px;
 }
 
 
@@ -901,31 +880,15 @@ header nav ul{
   padding: 30px;
 }
 
-.galeria-conteudo {
-  position: relative;
-  width: 92%;
-  max-width: 1050px;
-  max-height: 88vh;
-  overflow-y: auto;
-  background: #f6f2ec;
-  padding: 45px;
-  border-radius: 4px;
-}
-
-.galeria-conteudo h2 {
-  font-size: 32px;
-  font-weight: 500;
-  margin: 0 0 30px;
-  color: #222;
-}
-
 .fechar-galeria {
   position: absolute;
-  top: 15px;
-  right: 20px;
-  background: transparent;
+  top: 12px;
+  right: 18px;
+
   border: none;
-  font-size: 30px;
+  background: transparent;
+
+  font-size: 32px;
   color: #222;
   cursor: pointer;
 }
@@ -933,13 +896,7 @@ header nav ul{
 .galeria-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 18px;
-}
-
-.galeria-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 25px;
+  gap: 20px;
 }
 
 .catalogo-item {
@@ -990,19 +947,6 @@ header nav ul{
   height: 500px;
 }
 
-@media (max-width: 700px) {
-  .galeria-conteudo {
-    width: 95%;
-    padding: 35px 20px 20px;
-  }
-}
-
-@media (max-width: 900px) {
-  .galeria-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
 @media (max-width: 600px) {
   .galeria-grid {
     grid-template-columns: 1fr;
@@ -1011,15 +955,6 @@ header nav ul{
   .catalogo-item img {
     height: 300px;
   }
-}
-
-.galeria-conteudo {
-  width: 94%;
-  max-width: 1200px;
-  max-height: 88vh;
-  overflow-y: auto;
-  background: #f6f2ec;
-  padding: 45px;
 }
 
 .hero-conteudo h2,
@@ -1041,22 +976,12 @@ header nav ul{
 
 .logo-l {
   font-family: "Great Vibes", cursive;
-font-style: normal;
   font-style: italic;
   font-size: 44px;
-  font-style: italic;
   font-weight: 600;
   color: #b66a4a;
   margin-right: 1px;
   line-height: 1;
-}
-
-.hero-conteudo h2,
-.hero-conteudo p {
-  background: transparent !important;
-  background-color: transparent !important;
-  box-shadow: none !important;
-  padding: 0 !important;
 }
 
 .processo {
@@ -1119,16 +1044,6 @@ font-style: normal;
   transform: scale(1.05);
 }
 
-.categoria-card {
-  position: relative;
-  height: 420px;
-  overflow: hidden;
-  border-radius: 8px;
-  text-decoration: none;
-  color: white;
-  transition: transform 0.35s ease;
-}
-
 #pavimento,
 #revestimento,
 #grandes-formatos {
@@ -1159,35 +1074,27 @@ font-style: normal;
 
 
 .produto-destaque {
-  max-width: 1200px;
-  margin: 0 auto 90px;
-  padding: 0 25px;
+  max-width: 1150px;
+  margin: 0 auto 60px;
+  padding: 40px 30px;
 
   display: grid;
-  grid-template-columns: 1.2fr 1fr;
-  gap: 60px;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 45px;
   align-items: center;
+
+  box-sizing: border-box;
 }
-
-
-
-.produto-destaque.invertido .produto-imagem {
-  order: 2;
-}
-
-.produto-destaque.invertido .produto-texto {
-  order: 1;
-}
-
-
 
 .produto-imagem {
+  width: 100%;
+  height: 300px;
   overflow: hidden;
 }
 
 .produto-imagem img {
   width: 100%;
-  height: 480px;
+  height: 100%;
   object-fit: cover;
   display: block;
 
@@ -1198,25 +1105,28 @@ font-style: normal;
   transform: scale(1.03);
 }
 
-
+.produto-texto {
+  padding: 0;
+  transform: none;
+}
 
 .produto-texto span {
   color: #b66a4a;
-  font-size: 14px;
+  font-size: 11px;
   letter-spacing: 2px;
 }
 
 .produto-texto h2 {
-  font-size: 38px;
-  margin: 12px 0 20px;
+  font-size: 32px;
+  margin: 10px 0 15px;
   color: #222;
 }
 
 .produto-texto p {
   color: #666;
-  line-height: 1.8;
+  line-height: 1.7;
   margin-bottom: 28px;
-  max-width: 450px;
+  max-width: 430px;
 }
 
 
@@ -1240,34 +1150,28 @@ font-style: normal;
   transform: translateY(-2px);
 }
 
-@media (max-width: 700px) {
+@media (max-width: 750px) {
 
   .produto-destaque {
     grid-template-columns: 1fr;
     gap: 25px;
+    padding: 40px 20px;
     margin-bottom: 60px;
   }
 
-  .produto-destaque.invertido .produto-imagem,
-  .produto-destaque.invertido .produto-texto {
-    order: initial;
+  .produto-imagem {
+    height: 280px;
   }
 
   .produto-imagem img {
-    height: 330px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
   .produto-texto h2 {
     font-size: 30px;
   }
-
-}
-
-.categoria-card {
-  display: block;
-  position: relative;
-  cursor: pointer;
-  text-decoration: none;
 }
 
 .categoria-card::after {
@@ -1278,46 +1182,36 @@ font-style: normal;
   pointer-events: none;
 }
 
-.galeria-modal {
-  display: none;
-  position: fixed;
-  inset: 0;
-  z-index: 2000;
-  background: rgba(0, 0, 0, 0.85);
-  justify-content: center;
-  align-items: center;
-  padding: 30px;
-}
+.categoria-card {
+  display: block;
+  position: relative;
+  height: 420px;
+  overflow: hidden;
 
+  border-radius: 8px;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+
+  transition: transform 0.35s ease;
+}
 .galeria-conteudo {
   position: relative;
-  background: white;
   width: 100%;
   max-width: 950px;
   max-height: 85vh;
   overflow-y: auto;
+
+  background: white;
   padding: 35px;
+  border-radius: 4px;
 }
 
 .galeria-conteudo h2 {
-  margin-bottom: 25px;
   font-size: 30px;
-}
-
-.fechar-galeria {
-  position: absolute;
-  top: 12px;
-  right: 18px;
-  border: none;
-  background: transparent;
-  font-size: 32px;
-  cursor: pointer;
-}
-
-.galeria-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+  font-weight: 500;
+  margin: 0 0 25px;
+  color: #222;
 }
 
 .galeria-grid img {
@@ -1702,9 +1596,18 @@ font-style: normal;
 }
 
 .pedido-info {
-  max-width: 1200px;
+  max-width: 1100px;
   margin: 0 auto;
-  padding: 70px 30px;
+  padding: 60px 0;
+  box-sizing: border-box;
+  width: calc(100% - 60px);
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .pedido-titulo {
@@ -1803,19 +1706,22 @@ font-style: normal;
 }
 
 .showroom {
-  max-width: 1200px;
-  margin: 60px auto 90px;
-  padding: 0 30px;
+  max-width: 900px;
+  margin: 50px auto 70px;
+  padding: 30px;
 
   display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
-  align-items: stretch;
+  grid-template-columns: 300px 1fr;
+  gap: 30px;
+  align-items: center;
 
   background: #f6f2ec;
+  box-sizing: border-box;
 }
 
 .showroom-imagem {
-  height: 380px;
+  width: 300px;
+  height: 300px;
   overflow: hidden;
 }
 
@@ -1823,11 +1729,12 @@ font-style: normal;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: 75% center;
   display: block;
 }
 
 .showroom-info {
-  padding: 55px 50px;
+  padding: 0;
 
   display: flex;
   flex-direction: column;
@@ -1841,7 +1748,7 @@ font-style: normal;
 }
 
 .showroom-info h2 {
-  font-size: 36px;
+  font-size: 32px;
   margin: 12px 0 18px;
 }
 
@@ -1860,25 +1767,200 @@ font-style: normal;
   display: inline-block;
   width: fit-content;
   margin-top: 20px;
-
   color: #222;
   text-decoration: none;
-
   border-bottom: 1px solid #b66a4a;
   padding-bottom: 4px;
 }
 
-@media (max-width: 750px) {
-  .showroom {
-    grid-template-columns: 1fr;
+
+@media (max-width: 700px) {
+
+  /* 1. FORMULÁRIO: caixa de mensagem mais pequena */
+  .pedido-form textarea,
+  .campo textarea {
+    min-height: 120px;
+    height: 120px;
   }
 
-  .showroom-imagem {
+
+  /* 2. GALERIA DE PRODUTOS */
+  .galeria-modal {
+    padding: 12px;
+    align-items: flex-start;
+  }
+
+  .galeria-conteudo {
+    width: 100%;
+    max-height: calc(100vh - 24px);
+    overflow-y: auto;
+    padding: 20px 18px 30px;
+  }
+
+  /* O X acompanha o scroll */
+  .fechar-galeria {
+    position: sticky;
+    top: 8px;
+    margin-left: auto;
+    z-index: 50;
+
+    display: block;
+
+    width: 38px;
+    height: 38px;
+
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  }
+
+
+  /* 3. MATÉRIA / DESIGN / INOVAÇÃO / ESPAÇOS */
+  .universo-galeria {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    gap: 14px;
+  }
+
+  .universo-item {
+    flex: none !important;
+    width: 100%;
     height: 280px;
   }
 
-  .showroom-info {
-    padding: 30px;
+  .universo-item:hover {
+    flex: none !important;
   }
+
+  .universo-overlay {
+    left: 20px;
+    right: 20px;
+    bottom: 22px;
+  }
+
+  .universo-overlay h3 {
+    font-size: 25px;
+  }
+
+  .universo-overlay p {
+    opacity: 1;
+    transform: none;
+    font-size: 14px;
+  }
+
+
+.pedido-info {
+  padding: 35px 16px;
+}
+
+.pedido-titulo {
+  margin-bottom: 20px;
+}
+
+.pedido-titulo h1 {
+  font-size: 32px;
+  line-height: 1.08;
+  margin: 8px 0 12px;
+}
+
+.pedido-titulo p {
+  font-size: 14px;
+  line-height: 1.5;
+  max-width: 100%;
+}
+
+.pedido-titulo span {
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+
+.pedido-form input,
+.pedido-form select {
+  height: 38px !important;
+  min-height: 38px !important;
+  padding: 0 10px !important;
+  font-size: 13px;
+  box-sizing: border-box;
+}
+
+.pedido-form textarea {
+  height: 90px !important;
+  min-height: 90px !important;
+  padding: 8px 10px !important;
+  font-size: 13px;
+  box-sizing: border-box;
+}
+
+.showroom {
+  grid-template-columns: 1fr;
+  margin: 30px 16px 50px;
+  padding: 0;
+}
+
+.showroom-imagem {
+  width: 100%;
+  height: 220px;
+}
+
+.showroom-imagem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 78% center;
+}
+
+.showroom-info {
+  padding: 25px 20px 30px;
+  text-align: center;
+}
+
+.showroom-info h2 {
+  font-size: 28px;
+}
+}
+
+@media (min-width: 701px) and (max-width: 1000px) {
+
+  /* FOOTER mais compacto no tablet */
+  .footer {
+    padding: 35px 30px 20px;
+  }
+
+  .footer-conteudo {
+    gap: 25px;
+  }
+
+  .footer-coluna h3 {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+
+  .footer-coluna p,
+  .footer-coluna a {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+
+  /* SHOWROOM mais equilibrado */
+  .showroom {
+  max-width: 850px;
+  grid-template-columns: 300px 1fr;
+  gap: 30px;
+}
+
+.showroom-imagem {
+  width: 300px;
+  height: 300px;
+}
+
+.showroom-info {
+  padding: 20px;
+}
+
+.showroom-info h2 {
+  font-size: 30px;
+}
 }
 

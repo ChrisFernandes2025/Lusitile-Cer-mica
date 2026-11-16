@@ -107,7 +107,7 @@ if (recusarCookies) {
       slideAtual = (slideAtual + 1) % slides.length;
 
       slides[slideAtual].classList.add("ativo");
-    }, 5000);
+    }, 3500);
   }
 
 });
