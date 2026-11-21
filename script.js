@@ -446,3 +446,30 @@ if (listaCarrinho && totalCarrinho) {
 
   mostrarCarrinho();
 }
+
+const mensagemPedido = document.getElementById("mensagemPedido");
+
+if (mensagemPedido) {
+  const carrinho =
+    JSON.parse(localStorage.getItem("carrinho")) || [];
+
+  if (carrinho.length > 0) {
+    let mensagem = "Pedido de orçamento:\n\n";
+    let total = 0;
+
+    carrinho.forEach((produto) => {
+      const subtotal = produto.preco * produto.quantidade;
+      total += subtotal;
+
+      mensagem += `${produto.nome} × ${produto.quantidade} - ${subtotal
+        .toFixed(2)
+        .replace(".", ",")} €\n`;
+    });
+
+    mensagem += `\nTotal estimado: ${total
+      .toFixed(2)
+      .replace(".", ",")} €`;
+
+    mensagemPedido.value = mensagem;
+  }
+}

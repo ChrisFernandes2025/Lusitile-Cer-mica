@@ -236,6 +236,80 @@ nav a:hover {
 }
 
 @media (max-width: 700px) {
+
+ .carrinho-menu {
+  position: fixed;
+  right: 18px;
+  bottom: 15px;
+  margin: 0;
+  z-index: 4000;
+}
+
+.carrinho-menu a {
+  width: 48px;
+  height: 48px;
+
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.22);
+}
+
+.pagina-carrinho {
+  margin: 35px auto 60px;
+  padding: 0 18px;
+}
+
+.carrinho-topo h1 {
+  font-size: 32px;
+}
+
+.carrinho-topo p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.carrinho-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+
+  padding: 22px 0;
+}
+
+.carrinho-item > strong {
+  font-size: 18px;
+}
+
+.carrinho-quantidade {
+  margin-top: 10px;
+}
+
+.carrinho-resumo {
+  margin-top: 30px;
+  text-align: left;
+}
+
+.carrinho-resumo strong {
+  font-size: 28px;
+}
+
+.finalizar-pedido {
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+header nav ul {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 14px;
+}
+
+header nav a {
+  font-size: 14px;
+  white-space: nowrap;
+}
+
   .categorias {
     grid-template-columns: 1fr;
   }
@@ -2364,4 +2438,55 @@ nav a.ativo::after {
 
 .remover-produto:hover {
   color: #b66a4a;
+}
+
+.metodos-pagamento {
+  margin-top: 25px;
+}
+
+.metodos-pagamento > span {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #e3a083;
+}
+
+.pagamentos-lista {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.finalizar-pedido {
+  margin-top: 20px;
+  padding: 13px 28px;
+
+  border: none;
+  background: #b66a4a;
+  color: white;
+
+  font-family: inherit;
+  font-size: 14px;
+  cursor: pointer;
+
+  transition: background 0.3s ease, transform 0.3s ease;
+
+  display: inline-block;
+  text-decoration: none;
+}
+
+.finalizar-pedido:hover {
+  background: #96543b;
+  transform: translateY(-2px);
+}
+
+.pagamentos-lista span {
+  padding: 7px 10px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 4px;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 500;
 }
