@@ -12,6 +12,9 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
+<div id="notificacaoCarrinho" class="notificacao-carrinho">
+  Produto adicionado ao carrinho ✓
+</div>
 
 <body>
 
@@ -27,10 +30,17 @@
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="sobre.html">Sobre</a></li>
-        <li><a href="produtos.html">Produtos</a></li>
+        <li><a href="produtos.html" class="ativo">Produtos</a></li>
         <li><a href="contatos.html">Contactos</a></li>
       </ul>
     </nav>
+
+      <li class="carrinho-menu">
+  <a href="carrinho.html" id="abrirCarrinho">
+    🛒
+    <span id="contadorCarrinho">0</span>
+  </a>
+</li>
 
   </header>
 
@@ -184,7 +194,15 @@
 
         <div class="catalogo-info">
           <h3>Natural Sand</h3>
-          <p>Pavimento · Beje</p>
+          <p>Pavimento · Bege</p>
+
+          <button
+  class="adicionar-carrinho"
+  data-nome="Natural Sand - Bege"
+  data-preco="24.90"   data-imagem="imagens/pavimento.jpeg"
+>
+  Adicionar ao carrinho
+</button>
         </div>
       </div>
 
@@ -195,6 +213,14 @@
         <div class="catalogo-info">
           <h3>Urban Stone</h3>
           <p>Pavimento · Cinza</p>
+
+          <button
+  class="adicionar-carrinho"
+  data-nome="Urban Stone - Cinza"
+  data-preco="24.90" data-imagem="imagens/pavimento3.jpg"
+>
+  Adicionar ao carrinho
+</button>
         </div>
       </div>
 
@@ -205,6 +231,14 @@
         <div class="catalogo-info">
           <h3>Graphite</h3>
           <p>Pavimento · Antracite</p>
+
+          <button
+  class="adicionar-carrinho"
+  data-nome="Graphite - Antracite"
+  data-preco="24.90" data-imagem="imagens/exterior.png"
+>
+  Adicionar ao carrinho
+</button>
         </div>
       </div>
 
@@ -215,6 +249,14 @@
         <div class="catalogo-info">
           <h3>Travertino</h3>
           <p>Pavimento · Natural</p>
+
+          <button
+  class="adicionar-carrinho"
+  data-nome="Travertino - Natural"
+  data-preco="24.90" data-imagem="imagens/exterior.png"
+>
+  Adicionar ao carrinho
+</button>
         </div>
       </div>
 
@@ -242,6 +284,14 @@
         <div class="catalogo-info">
           <h3>Vetra</h3>
           <p>Revestimento · Indigo</p>
+
+          <button
+  class="adicionar-carrinho"
+  data-nome="Vetra - Indigo"
+  data-preco="24.90" data-imagem="imagens/peq-formato1.jpg"
+>
+  Adicionar ao carrinho
+</button>
         </div>
       </div>
 
@@ -251,6 +301,14 @@
         <div class="catalogo-info">
           <h3>Terra</h3>
           <p>Revestimento · Verde</p>
+
+          <button
+  class="adicionar-carrinho"
+  data-nome="Terra - Verde"
+  data-preco="24.90" data-imagem="imagens/peq_formato.jpg"
+>
+  Adicionar ao carrinho
+</button>
         </div>
       </div>
 
@@ -260,6 +318,14 @@
         <div class="catalogo-info">
           <h3>Ivory</h3>
           <p>Revestimento · Bege</p>
+
+          <button
+  class="adicionar-carrinho"
+  data-nome="Ivory - Bege"
+  data-preco="24.90" data-imagem="imagens/revestimento-capa.jpg"
+>
+  Adicionar ao carrinho
+</button>
         </div>
       </div>
 
@@ -269,6 +335,14 @@
         <div class="catalogo-info">
           <h3>Belverdi</h3>
           <p>Revestimento · Branco Brilho</p>
+
+          <button
+  class="adicionar-carrinho"
+  data-nome="Belverdi - Branco Brilho"
+  data-preco="24.90" data-imagem="imagens/revestimento2.jpg"
+>
+  Adicionar ao carrinho
+</button>
         </div>
       </div>
 
@@ -295,7 +369,15 @@
 
         <div class="catalogo-info">
           <h3>Ivory</h3>
-          <p>Grande formato · Beje</p>
+          <p>Grande formato · Bege</p>
+
+          <button
+  class="adicionar-carrinho"
+  data-nome="Ivory - Bege"
+  data-preco="24.90" data-imagem="imagens/grande-formato.jpg"
+>
+  Adicionar ao carrinho
+</button>
         </div>
       </div>
 
@@ -305,6 +387,14 @@
         <div class="catalogo-info">
           <h3>Stone Grey</h3>
           <p>Grande formato · Cinza</p>
+
+          <button
+  class="adicionar-carrinho"
+  data-nome="Stone Grey - Cinza"
+  data-preco="24.90" data-imagem="imagens/grande-formato1.jpg"
+>
+  Adicionar ao carrinho
+</button>
         </div>
       </div>
 
@@ -314,6 +404,14 @@
         <div class="catalogo-info">
           <h3>Calacatta</h3>
           <p>Grande formato · Branco</p>
+
+          <button
+  class="adicionar-carrinho"
+  data-nome="Calacatta - Branco"
+  data-preco="24.90" data-imagem="imagens/exterior1.jpg"
+>
+  Adicionar ao carrinho
+</button>
         </div>
       </div>
 
@@ -323,6 +421,14 @@
         <div class="catalogo-info">
           <h3>Graphite</h3>
           <p>Grande formato · Antracite</p>
+
+          <button
+  class="adicionar-carrinho"
+  data-nome="Graphite - Antracite"
+  data-preco="24.90" data-imagem="imagens/grandesFormatos-capa.jpg"
+>
+  Adicionar ao carrinho
+</button>
         </div>
       </div>
 
@@ -335,7 +441,91 @@
 
   </main>
 
+<section class="calculadora-area">
+  <div class="calculadora-intro">
+    <span>PLANEIE O SEU PROJETO</span>
+    <h2>Calculador de área</h2>
+    <p>
+      Indique as medidas do espaço e descubra aproximadamente
+      a quantidade de cerâmica necessária para o seu projeto.
+    </p>
+  </div>
 
+  <div class="calculadora-box">
+
+    <div class="calculadora-campo">
+      <label for="comprimento">Comprimento do espaço (m)</label>
+      <input
+        type="number"
+        id="comprimento"
+        min="0"
+        step="0.01"
+        placeholder="Ex: 4.50"
+      >
+    </div>
+
+    <div class="calculadora-campo">
+      <label for="largura">Largura do espaço (m)</label>
+      <input
+        type="number"
+        id="largura"
+        min="0"
+        step="0.01"
+        placeholder="Ex: 3.20"
+      >
+    </div>
+
+    <div class="calculadora-campo">
+      <label for="desperdicio">Margem para desperdício</label>
+      <select id="desperdicio">
+        <option value="0">Sem margem</option>
+        <option value="5">5%</option>
+        <option value="10" selected>10%</option>
+        <option value="15">15%</option>
+      </select>
+    </div>
+
+
+    <div class="calculadora-campo">
+  <label for="larguraPeca">Largura da peça (cm)</label>
+  <input
+    type="number"
+    id="larguraPeca"
+    min="1"
+    step="0.1"
+    placeholder="Ex: 60"
+  >
+</div>
+
+<div class="calculadora-campo">
+  <label for="comprimentoPeca">Comprimento da peça (cm)</label>
+  <input
+    type="number"
+    id="comprimentoPeca"
+    min="1"
+    step="0.1"
+    placeholder="Ex: 120"
+  >
+</div>
+
+   <div class="calculadora-acoes">
+  <button type="button" id="calcularArea">
+    Calcular quantidade
+  </button>
+
+  <button type="button" id="limparCalculo">
+    Limpar cálculo
+  </button>
+</div>
+
+    <div class="calculadora-resultado" id="resultadoArea">
+      <span>Quantidade estimada</span>
+      <strong>0 m²</strong>
+      <p>Introduza as medidas para calcular.</p>
+    </div>
+
+  </div>
+</section>
 
  <footer class="footer">
 
@@ -369,7 +559,7 @@
         </div>
     </div>
 
-        <div class="footer-bottom">
+    <div class="footer-bottom">
             <p>© 2026 Lusitile. Todos os direitos reservados.</p>
         </div>
 </footer>

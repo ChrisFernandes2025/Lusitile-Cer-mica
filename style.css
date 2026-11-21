@@ -1964,3 +1964,404 @@ header nav ul{
 }
 }
 
+.calculadora-area {
+  max-width: 1100px;
+  margin: 80px auto;
+  padding: 60px 40px;
+  background: #f6f2ec;
+  box-sizing: border-box;
+}
+
+.calculadora-intro {
+  max-width: 650px;
+  margin-bottom: 40px;
+}
+
+.calculadora-intro span {
+  font-size: 11px;
+  letter-spacing: 3px;
+  color: #b66a4a;
+}
+
+.calculadora-intro h2 {
+  font-size: 38px;
+  margin: 10px 0 15px;
+  color: #222;
+}
+
+.calculadora-intro p {
+  color: #666;
+  line-height: 1.7;
+}
+
+.calculadora-box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  align-items: end;
+}
+
+.calculadora-campo label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.calculadora-campo input,
+.calculadora-campo select {
+  width: 100%;
+  height: 45px;
+  padding: 0 12px;
+  border: 1px solid #ddd;
+  background: white;
+  font-family: inherit;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+#calcularArea {
+  height: 45px;
+  padding: 0 24px;
+  border: none;
+  background: #b66a4a;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+#calcularArea:hover {
+  background: #96543b;
+}
+
+.calculadora-resultado {
+  grid-column: 1 / -1;
+  margin-top: 15px;
+  padding: 30px;
+  background: white;
+  text-align: center;
+}
+
+.calculadora-resultado span {
+  display: block;
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #777;
+}
+
+.calculadora-resultado strong {
+  display: block;
+  margin: 10px 0;
+  font-size: 42px;
+  color: #b66a4a;
+}
+
+.calculadora-resultado p {
+  margin: 0;
+  color: #666;
+}
+
+@media (max-width: 700px) {
+  .calculadora-area {
+    margin: 50px 16px;
+    padding: 40px 20px;
+  }
+
+  .calculadora-intro h2 {
+    font-size: 30px;
+  }
+
+  .calculadora-box {
+    grid-template-columns: 1fr;
+  }
+
+  .calculadora-resultado {
+    grid-column: 1;
+  }
+}
+
+.calculadora-resultado .resultado-pecas {
+  margin-top: 18px;
+  padding-top: 18px;
+  border-top: 1px solid #ddd;
+}
+
+.calculadora-resultado .resultado-pecas strong {
+  display: inline;
+  font-size: 22px;
+  color: #b66a4a;
+}
+
+.calculadora-acoes {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#calcularArea {
+  width: 100%;
+}
+
+#limparCalculo {
+  border: none;
+  background: transparent;
+  color: #777;
+  font-size: 13px;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+#limparCalculo:hover {
+  color: #b66a4a;
+}
+
+#limparCalculo:hover {
+  background: #b66a4a;
+  color: white;
+}
+
+nav a.ativo {
+  color: #b66a4a;
+  font-weight: 600;
+  position: relative;
+}
+
+nav a.ativo::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 2px;
+  background: #b66a4a;
+}
+
+
+
+.nav-lista {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.carrinho-menu {
+  margin-left: 20px;
+  list-style: none;
+}
+
+.carrinho-menu a {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 46px;
+  height: 46px;
+
+  background: #222;
+  color: white;
+
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 21px;
+
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.carrinho-menu a:hover {
+  background: #b66a4a;
+  transform: scale(1.06);
+}
+
+#contadorCarrinho {
+  position: absolute;
+  top: -7px;
+  right: -7px;
+
+  min-width: 21px;
+  height: 21px;
+  padding: 0 4px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #b66a4a;
+  color: white;
+
+  border: 2px solid white;
+  border-radius: 50%;
+
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.notificacao-carrinho {
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+
+  background: #3f7d5a;
+  color: white;
+
+  padding: 14px 20px;
+  border-radius: 4px;
+
+  font-size: 14px;
+
+  opacity: 0;
+  transform: translateY(20px);
+  pointer-events: none;
+
+  transition: opacity 0.3s ease, transform 0.3s ease;
+
+  z-index: 5000;
+}
+
+.notificacao-carrinho.ativo {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.pagina-carrinho {
+  max-width: 1000px;
+  margin: 60px auto 90px;
+  padding: 0 30px;
+}
+
+.carrinho-topo {
+  margin-bottom: 40px;
+}
+
+.carrinho-topo span {
+  font-size: 11px;
+  letter-spacing: 3px;
+  color: #b66a4a;
+}
+
+.carrinho-topo h1 {
+  font-size: 42px;
+  margin: 10px 0;
+}
+
+.carrinho-topo p {
+  color: #666;
+}
+
+.lista-carrinho {
+  border-top: 1px solid #ddd;
+}
+
+.carrinho-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 25px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.carrinho-item h3 {
+  margin: 0 0 6px;
+  font-size: 20px;
+}
+
+.carrinho-item p {
+  margin: 0;
+  color: #777;
+  font-size: 14px;
+}
+
+.carrinho-item > strong {
+  color: #b66a4a;
+  font-size: 18px;
+}
+
+.carrinho-resumo {
+  margin-top: 35px;
+  text-align: right;
+}
+
+.carrinho-resumo span {
+  display: block;
+  color: #777;
+  font-size: 13px;
+}
+
+.carrinho-resumo strong {
+  display: block;
+  margin-top: 6px;
+  font-size: 30px;
+  color: #222;
+}
+
+.carrinho-vazio {
+  padding: 40px 0;
+  color: #777;
+}
+
+.adicionar-carrinho {
+  margin-top: 12px;
+  padding: 10px 18px;
+
+  border: none;
+  background: #b66a4a;
+  color: white;
+
+  font-size: 13px;
+  font-family: inherit;
+  cursor: pointer;
+
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.adicionar-carrinho:hover {
+  background: #96543b;
+  transform: translateY(-2px);
+}
+
+.carrinho-quantidade {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.carrinho-quantidade button {
+  width: 30px;
+  height: 30px;
+
+  border: 1px solid #ccc;
+  background: white;
+
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.carrinho-quantidade span {
+  min-width: 20px;
+  text-align: center;
+}
+
+.remover-produto {
+  margin-top: 12px;
+
+  border: none;
+  background: transparent;
+
+  color: #777;
+  font-size: 12px;
+  cursor: pointer;
+
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.remover-produto:hover {
+  color: #b66a4a;
+}

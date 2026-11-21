@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrinho | Lusitile</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <a href="index.html" class="logo-texto">
+      <span class="logo-l">L</span>usitile
+    </a>
+
+    <nav>
+      <ul class="nav-lista">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="produtos.html">Produtos</a></li>
+        <li><a href="contatos.html">Contactos</a></li>
+
+        <li class="carrinho-menu">
+          <a href="carrinho.html" class="ativo">
+            🛒
+            <span id="contadorCarrinho">0</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="pagina-carrinho">
+  <div class="carrinho-topo">
+    <span>O SEU PEDIDO</span>
+    <h1>O seu carrinho</h1>
+    <p>Revise os produtos adicionados antes de finalizar o pedido.</p>
+  </div>
+
+  <div id="listaCarrinho" class="lista-carrinho"></div>
+
+  <div class="carrinho-resumo">
+    <span>Total estimado</span>
+    <strong id="totalCarrinho">0,00 €</strong>
+  </div>
+</main>
+
+  <script src="script.js"></script>
+</body>
+</html>
